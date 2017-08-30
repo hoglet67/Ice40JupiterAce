@@ -1,0 +1,11 @@
+*~
+#*
+not_in_git/
+# IceStorm files
+jupiter_ace.bin
+jupiter_ace.blif
+jupiter_ace.log
+jupiter_ace.txt
+# Simulation files
+dump.vcd
+a.out
