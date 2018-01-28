@@ -1,0 +1,67 @@
+# User Constraint File for BlackIce Jupiter Ace (Ice40JupiterAce)
+
+# Onboard 100MHz oscillator
+set_io clk100 129
+
+# Keyboard - Matches Digilent PmodPS/2 plugged into lower half of PMOD11/12
+set_io clkps2           26 # PMOD46 = PMOD 11/12 pin 8
+set_io dataps2          32 # PMOD44 = PMOD 11/12 pin 12
+
+# Sound
+set_io ear              21 # PMOD43 PMOD 11/12 pin 5
+set_io audio_out_left   22 # PMOD42 PMOD 11/12 pin 7
+set_io audio_out_right  33 # PMOD41 PMOD 11/12 pin 9
+
+# VGA Output - Matches Digilent PmodVGA plugged into PMOD7/8/9/10
+set_io red[3]           15 # PMOD35 = PMOD 9/10 pin  5
+set_io red[2]           16 # PMOD34 = PMOD 9/10 pin  7
+set_io red[1]           19 # PMOD33 = PMOD 9/10 pin  9
+set_io red[0]           20 # PMOD32 = PMOD 9/10 pin 11
+
+set_io green[3]          1 # PMOD27 = PMOD  7/8 pin  5
+set_io green[2]          2 # PMOD26 = PMOD  7/8 pin  7
+set_io green[1]          9 # PMOD25 = PMOD  7/8 pin  9
+set_io green[0]         10 # PMOD24 = PMOD  7/8 pin 11
+
+set_io blue[3]          11 # PMOD39 = PMOD 9/10 pin  6
+set_io blue[2]          12 # PMOD38 = PMOD 9/10 pin  8
+set_io blue[1]          17 # PMOD37 = PMOD 9/10 pin 10
+set_io blue[0]          18 # PMOD36 = PMOD 9/10 pin 12
+
+set_io hsync             8 # PMOD28 = PMOD  7/8 pin 12
+set_io vsync             7 # PMOD29 = PMOD  7/8 pin 10
+
+set_io stdn    106 # PMOD23 PMOD 5/6 pin  6
+set_io stdnb   110 # PMOD22 PMOD 5/6 pin  8
+
+# ARM SPI Port
+#set_io arm_ss   71 # also LED1
+#set_io arm_miso 67 # also LED2
+#set_io arm_mosi 68 # also LED3
+#set_io arm_sclk 70 # also LED4
+
+# Test
+#set_io test0 106 # PMOD23 PMOD 5/6 pin  6
+#set_io test1 110 # PMOD22 PMOD 5/6 pin  8
+#set_io test2 113 # PMOD21 PMOD 5/6 pin 10
+#set_io test3 144 # PMOD20 PMOD 5/6 pin 12
+
+# LEDs (active high)
+#set_io led1     71
+#set_io led2     67
+#set_io led3     68
+#set_io led4     70
+
+# SD Card
+#set_io ss       38 # DIG18
+#set_io sclk     37 # DIG19
+#set_io mosi     41 # DIG16
+#set_io miso     63 # B1
+
+# Switches
+#set_io sw1_2    37 # DIG19
+#set_io sw1_1    38 # DIG18
+#set_io sw2_2    39 # DIG17
+#set_io sw2_1    41 # DIG16
+#set_io sw3      63 # B1 (active low)
+#set_io sw4      64 # B2 (active low)
